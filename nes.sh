@@ -8,7 +8,7 @@ suffix=${suffix:0:180}
 # Set the necessary variables
 RESOURCE_GROUP="r-d100-l${suffix}"
 RESOURCE_PROVIDER="Microsoft.MachineLearning"
-REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
+REGIONS=(""australiaeast" "australiasoutheast" "brazilsouth" "canadacentral" "canadaeast" "centralindia" "centralus" "eastasia" "eastus" "eastus2" "francecentral" "germanywestcentral" "italynorth" "japaneast" "japanwest" "koreacentral" "northcentralus" "northeurope" "norwayeast" "polandcentral" "qatarcentral" "southafricanorth" "southcentralus" "southeastasia" "southindia" "spaincentral" "swedencentral" "switzerlandnorth" "switzerlandwest" "uaenorth" "uksouth" "ukwest" "westcentralus" "westeurope" "westus" "westus2" "westus3")
 RANDOM_REGION=${REGIONS[$RANDOM % ${#REGIONS[@]}]}
 WORKSPACE_NAME="ml-d100-l${suffix}"
 COMPUTE_INSTANCE="ci${suffix}"
